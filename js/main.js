@@ -64,15 +64,16 @@ for (let i = 0; i !== "FIN"; i++) {
                         precio = 2500;
                         break;
                 }
-                
+                 
             let cantidad = parseInt (prompt ("Ingrese la cantidad deseada"));
             subtotal = cantidad*precio;
             alert (`Su subtotal por la compra es de: $ ${subtotal}`);
-
+  
             carrito.push ({tipoDeProducto, sabor, cantidad, precio});
             for (const items of carrito) {
                 alert(`Su carrito contiene los siguientes items:\n Tipo de Producto: ${items.tipoDeProducto}\nSabor: ${items.sabor}\nPrecio unitario: ${items.precio}\nCantidad: ${items.cantidad}`);
             }
+
 
             let consultaEnvio = prompt ("Desea agregar envio a domicilio (SI/NO)?")
                 function calcularEnvio () {
@@ -89,16 +90,16 @@ for (let i = 0; i !== "FIN"; i++) {
                 }
             }
             calcularEnvio ();
-    
-        }    else if (tipoDeProducto === "LISTA") {
+      
+        } else if  (tipoDeProducto === "LISTA") {
                 for (const producto of productos) {
                     alert(`Tipo de Producto: ${producto.tipoDeProducto}\nSabor: ${producto.sabor}\nPrecio: ${producto.precio}\n`);
                 }
-      
-            } else if (tipoDeProducto === "FIN") {
+
+        } else {
                 alert ("Gracias por visitar nuestra pagina");
                 break;
-            }
+        }
     }
 
 
