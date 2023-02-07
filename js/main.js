@@ -6,6 +6,8 @@ class Productos {
         this.vendido = false;
     }
 
+
+
 }
 
 const productos = [];
@@ -37,11 +39,17 @@ for (let i = 0; i !== "FIN"; i++) {
         if (productoElegido === "Cupcakes" || productoElegido === "Tortas") {
             let sabor = prompt ("Ingrese el sabor elegido, las opciones para Cupcakes son: Limon, Chocolate, Vainilla o Red Velvet; las opciones para Tortas son: Brownie, Chocotorta, Cheesecake de Frutos Rojos, Cheesecake de Chocolate, Lemon Pie, Mousse de Frutilla, Rogel o Crumble de Manzana.");
             let cantidad = parseInt (prompt ("Ingrese la cantidad deseada"));
-            subtotal = cantidad*precio;
-            alert ("Su subtotal por la compra es de: $ " + subtotal);
+
+// YEOLIS ESTE ES LA PARTE QUE NO SE COMO RESOLVER, EL RESTO POR LO QUE VOY PROBANDO VA BIEN
+
+            // const agregarCarrito = productos.find(({sabor}) => sabor === productoElegido) ;
+            // alert (agregarCarrito);
+
+            // // subtotal = cantidad*precio;
+            // alert ("Su subtotal por la compra es de: $ " + subtotal);
     
-            carrito.push ({tipoDeProducto, sabor, cantidad, precio});
-            console.log (carrito);
+            // // carrito.push ({tipoDeProducto, sabor, cantidad, precio});
+            // // console.log (carrito);
     
             let consultaEnvio = prompt ("Desea agregar envio a domicilio (SI/NO)?")
                 function calcularEnvio () {
