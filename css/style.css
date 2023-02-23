@@ -224,10 +224,4 @@ p {
 
 /* cierre contacto */
 
-.modal-contenedor {
-	display: flex;
-	justify-content: left;
-	margin: 1px;
-	font-size: small;
-	color: $title-color;
-}
+
